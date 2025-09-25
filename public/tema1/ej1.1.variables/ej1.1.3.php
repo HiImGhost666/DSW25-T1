@@ -18,10 +18,10 @@
 
 
     const VERSION_PHP = "8.4";
-    const IS_TEST_MODE_ACTIVE = false;
+    define("IS_TEST_MODE_ACTIVE", false); // define
 
     echo "<p>Versión de PHP: " . VERSION_PHP . "</p>";
-    echo "<p>Test Mode: " . IS_TEST_MODE_ACTIVE . "</p>";
+    echo "<p>Test mode: " . IS_TEST_MODE_ACTIVE . "</p>";
 
 
     ?>
