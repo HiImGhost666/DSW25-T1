@@ -15,21 +15,27 @@
     ];
 
     echo '<table border = "1">';
-    echo "<tr>";
-        echo "<th>Producto</th>";
-        echo "<th>Precio</th>";
+    // Cabecera de la tabla
+    echo '<thead>';
+    echo '<tr>';
+    echo '<th>Producto</th>';
+    echo '<th>Precio</th>';
+    echo '</tr>';
+    echo '</thead>';
 
-    echo "<tr>";
+    // Cuerpo de la tabla
+    echo '<tbody>';
     foreach($producto as $nombre => $precio){
-        echo "<tr>";
+        echo '<tr>';
         echo '<td>' . $nombre . '</td>';
         echo '<td>';
         printf("%.2f€", $precio);
         echo '</td>';
+        echo '</tr>';
     }
-    echo "</tr";
+    echo '</tbody>';
 
-    echo "</table>";
+    echo '</table>';
     ?>
 </body>
 </html>

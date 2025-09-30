@@ -19,7 +19,7 @@
     echo "</pre></div>"; 
 
 
-    $productos[] = ["aguacate" => 5.99];
+    $productos["aguacate"] = 5.99;
     echo "<div>Array:<pre>";
     print_r($productos);
     echo "</pre></div>"; 
